@@ -1,0 +1,5 @@
+https://samuel-amity.github.io/Assignments/HTML%202/index.html 
+    - preview
+
+https://github.com/Samuel-Amity/Assignments/blob/main/HTML%202/index.html
+    - code
