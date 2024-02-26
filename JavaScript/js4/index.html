@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <label>From:</label>
+    <select id="from">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+    </select>
+    <label>To:</label>
+    <select id="to">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+    </select>
+    <br>
+    <label>Amount To Convert:</label>
+    <input type="text" id="amount">
+    <button id="convert">Convert</button>
+    <br>
+    <label>Result Amount:</label>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("convert").addEventListener("click", function() {
+            let fromCurrency = document.getElementById("from").value;
+            let toCurrency = document.getElementById("to").value;
+            let amount = document.getElementById("amount").value;
+
+            fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`)
+            .then(response => response.json())
+            .then(data => {
+                let rate = data.rates[toCurrency];
+                let total = rate * amount;
+                document.getElementById("result").textContent = "Total: " + total;
+            })
+            .catch(error => {
+                console.log("Error fetching data:", error);
+                document.getElementById("result").textContent = "Error: Unable to convert.";
+            });
+        });
+    </script>
+</body>
+</html>
