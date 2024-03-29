@@ -1,0 +1,8 @@
+Pointer || High level language || Low level language
+
+understand || Easy to understand || Not easy to understand
+Translator || Easy to interpret and combine ||require assemblers to translate
+Speed      || High-level languages take more time || Low level takes less time
+Debug      || Very easy to debug      || not very easy to debug
+Example    || Java,c,c+ and python   || Machine language and assembly language
+Application || used for programming || not widely used for programming but mainly for os building 

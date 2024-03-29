@@ -1,0 +1,18 @@
+use assignments;
+create table sam123
+(
+id int,
+name varchar(255),
+price varchar(255),
+quantity varchar(255)
+);
+select * from sam123; -- 1. Display all records with name and price fileds.
+insert into sam123(id,name,price,quantity)
+values(1,"tv","45000","3"),
+(2,"bike","85000","2"),
+(3,"washing machine","40000","4"),
+(4,"fan","18000","10"),
+(5,"car","95000","2");
+SELECT price * 0.8 FROM sam123; -- 2. display records of product with 20% discount on price
+select price from sam123 where price<="60000"; -- 3. find the records of product whose price is less than 60000/-
+select quantity from sam123 where quantity>=3 and quantity<=10; -- 4. find the records of product whose quantity is between 3 to 10

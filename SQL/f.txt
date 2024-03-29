@@ -1,0 +1,17 @@
+use assignments;
+create table student
+(
+stu_id int,
+stu_name varchar(255),
+stu_address varchar(255),
+stu_phno varchar(10),
+stu_percent varchar(3)
+);
+select * from student;
+insert into student
+value(1,"Rahul","Agra","9557806625","85");
+insert into student values(2,"Ankit","Delhi","8855664471","75"),
+(3,"Shailendra","Noida","7213457896","92");
+select * from student where stu_percent>80;
+update student set stu_percent=87 where stu_id=1;
+delete from student where stu_name="ankit";

@@ -1,0 +1,11 @@
+create table grocery
+(
+item_no int,
+item_name varchar(20),
+mfd varchar (10),
+expdate varchar(12),
+address varchar(20),
+city varchar(10));
+);
+
+drop table grocery;

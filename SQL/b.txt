@@ -1,0 +1,29 @@
+create database assignments;
+use assignments;
+show databases;
+create table employee -- 1.ADD EMPLOYEE (ID, NAME, DEPARTMENT, SALARY)
+(ID int,
+NAME varchar(255),
+DEPARTMENT varchar(255),
+SALARY varchar(10));
+select * from employee;
+insert into employee(ID, NAME, DEPARTMENT, SALARY)
+values (1,"Jay","HR","5000",""),
+(2,"Yash","Management","7000"),
+(3,"Annand","Training","6000"),
+(4,"Ruhi","Sales","4000"),
+(5,"Pratik","Admin","3000"),
+(6,"Raj","Training","5000");
+select name from employee; -- 2.  SHOW EMPLOYEES
+update employee set SALARY="2509" where id=1; -- 3. UPDATE EMPLOYEE SALARY
+update employee set DEPARTMENT="networking" where id=1; -- 4. UPDATE EMPLOYEE DEPARTMENT
+delete employee; -- 5. DELETE EMPLOYEE
+select salary from employee; -- SORT BY SALARY
+alter table employee add LOCATION varchar(255);
+update employee set LOCATION="mumbai" where id=1;
+update employee set LOCATION="pune" where id=2;
+update employee set LOCATION="chennai" where id=3;
+update employee set LOCATION="delhi" where id=4;
+update employee set LOCATION="pune" where id=5;
+update employee set LOCATION="mumbai" where id=6;
+select LOCATION from employee where LOCATION="mumbai";-- 7. FILTER IT FOR MUMBAI LOCATION
