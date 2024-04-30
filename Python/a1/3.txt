@@ -1,0 +1,13 @@
+1) Difference between high-level and low-level programming language:
+   - High-level: Easier for humans to understand and write, closer to human language. Examples include Python and Java.
+   - Low-level: Closer to machine language, harder for humans to understand and write directly. Examples include Assembly language and Machine code.
+
+2) Description of Python programming language:
+   - Python is a high-level, interpreted programming language known for its simplicity and readability.
+   - It uses indentation for code blocks, making it easy to read and maintain.
+   - Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+   - It has a large standard library and a vibrant community, making it suitable for a wide range of applications, from web development to data analysis and machine learning.
+
+3) Platform independent programming language:
+   - A platform-independent programming language is one that can run on multiple operating systems or platforms without modification.
+   - Python is an example of a platform-independent language because code written in Python can run on various platforms like Windows, macOS, and Linux without any changes.

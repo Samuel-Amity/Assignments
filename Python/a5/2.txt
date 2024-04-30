@@ -1,0 +1,16 @@
+import random
+
+random_integers = [random.randint(1, 100) for _ in range(10)]
+
+odd_list = []
+even_list = []
+
+for num in random_integers:
+    if num % 2 != 0:
+        odd_list.append(num)
+    else:
+        even_list.append(num)
+
+print("Original list of random integers:", random_integers)
+print("List of odd numbers:", odd_list)
+print("List of even numbers:", even_list)

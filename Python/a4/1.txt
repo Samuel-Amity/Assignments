@@ -1,0 +1,9 @@
+a = 100
+sum_even = 0
+
+while a <= 200:
+    if a % 2 == 0:
+        sum_even += a
+    a += 1
+
+print("Sum of even numbers between 100 and 200:", sum_even)

@@ -1,0 +1,23 @@
+
+p1 = float(input("Enter principle amount (p) for set 1: "))
+n1 = float(input("Enter number of years (n) for set 1: "))
+r1 = float(input("Enter rate of interest (r) for set 1: "))
+
+
+print("Simple interest for set 1:", (p1 * n1 * r1) / 100)
+
+
+p2 = float(input("Enter principle amount (p) for set 2: "))
+n2 = float(input("Enter number of years (n) for set 2: "))
+r2 = float(input("Enter rate of interest (r) for set 2: "))
+
+
+print("Simple interest for set 2:", (p2 * n2 * r2) / 100)
+
+
+p3 = float(input("Enter principle amount (p) for set 3: "))
+n3 = float(input("Enter number of years (n) for set 3: "))
+r3 = float(input("Enter rate of interest (r) for set 3: "))
+
+
+print("Simple interest for set 3:", (p3 * n3 * r3) / 100)

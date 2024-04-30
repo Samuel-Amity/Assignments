@@ -1,0 +1,41 @@
+1. Variable: A container for storing data in a program, like numbers or text.
+
+2. snake_case: Words are separated by underscores_like_this. camelCase: Words start with lowercase, then each subsequent word starts with uppercaseLikeThis.
+
+3. Integer Division: Division that results in an integer, discarding any remainder.
+
+4. Program to exchange values without temporary variable:
+    
+   a = 5
+   b = 10
+   a = a + b
+   b = a - b
+   a = a - b
+   print("a =", a)
+   print("b =", b)
+    
+   Program with temporary variable:
+    
+   a = 5
+   b = 10
+   temp = a
+   a = b
+   b = temp
+   print("a =", a)
+   print("b =", b)
+    
+
+5. Program to accept and display a string:
+    
+   string = input("Enter a string: ")
+   print("You entered:", string)
+    
+
+6. Program to find average marks for three subjects:
+    
+   marks1 = float(input("Enter marks for subject 1: "))
+   marks2 = float(input("Enter marks for subject 2: "))
+   marks3 = float(input("Enter marks for subject 3: "))
+   average = (marks1 + marks2 + marks3) / 3
+   print("Average marks:", average)
+    

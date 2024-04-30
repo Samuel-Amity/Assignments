@@ -1,0 +1,21 @@
+Open Source: Python code that's open to everyone to view, change, and share.
+
+Free: Python's available for anyone to use commercially or not without paying.
+
+Platform Independent: Python programs work on various platforms like Windows, Mac, and Linux without alteration.
+
+Portable: Python code can move between different systems like Windows to Linux without edits.
+
+Simple to Learn: Python's easy to pick up, and its indentation style makes it readable.
+
+Dynamically Typed: No need to specify variable types; Python figures it out during runtime.
+
+Interpreted Language: Python's interpreted by another program (an interpreter) and comes with an IDLE for coding.
+
+Extensible and Embeddable: Python code can be translated to C/C++ and vice versa, and other languages like C++ can be added to Python.
+
+Broad Standard Library: Python's got lots of built-in tools for large app development, though it lacks compile-time checking.
+
+Supports both Function and Object Oriented Concepts.
+
+Includes testing and error-checking support for both modules and whole programs.

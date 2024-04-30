@@ -1,0 +1,24 @@
+friends = {
+    "Alice": "1234567890",
+    "Bob": "9876543210",
+    "Charlie": "4567890123",
+    "David": "7890123456"
+}
+
+print("Friends' phone numbers:")
+for name, number in sorted(friends.items()):
+    print(name + ": " + number)
+
+name = input("Enter a name to check if it's present in the dictionary: ")
+
+if name in friends:
+    print(name + "'s phone number:", friends[name])
+else:
+    print(name + " is not present in the dictionary.")
+    number = input("Enter " + name + "'s phone number: ")
+    friends[name] = number
+    print("Updated dictionary with " + name + "'s phone number.")
+
+print("\nUpdated friends' phone numbers:")
+for name, number in sorted(friends.items()):
+    print(name + ": " + number)
