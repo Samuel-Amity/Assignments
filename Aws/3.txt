@@ -1,0 +1,24 @@
+What is EBS?
+Amazon Elastic Block Store (EBS) is a persistent block storage service used with EC2 instances. It provides high availability and durability, allowing data to persist even after instances are stopped. EBS volumes are like virtual hard drives that can be attached to instances for applications needing frequent read/write operations, such as databases and file systems.
+
+Types of EBS Volumes
+General Purpose SSD (gp3, gp2)
+
+Use: Balanced performance for general workloads like boot volumes and databases.
+Features: gp3 allows scalable IOPS, while gp2 performance increases with size.
+Provisioned IOPS SSD (io2, io1)
+
+Use: High-performance applications (e.g., large databases).
+Features: High IOPS with low latency and better durability for mission-critical workloads.
+Throughput Optimized HDD (st1)
+
+Use: Large-scale, sequential data workloads (e.g., big data, log processing).
+Features: High throughput, lower cost than SSD.
+Cold HDD (sc1)
+
+Use: Infrequently accessed data (e.g., backups, archival).
+Features: Lowest cost, suitable for cold storage.
+Magnetic (Deprecated)
+
+Use: Older instances with low-performance requirements.
+Features: Slower, used for legacy workloads.

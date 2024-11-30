@@ -1,0 +1,19 @@
+Domain Name
+A Domain Name is a human-readable address used to identify a specific location on the internet. It serves as an easy-to-remember representation of an IP address, which is the numerical label assigned to each device connected to the internet. For example, instead of typing an IP address like 192.0.2.1, users can simply enter example.com into their web browsers to access a website. Domain names consist of two main parts: the Second-Level Domain (SLD) (e.g., example) and the Top-Level Domain (TLD) (e.g., .com, .org, .net).
+
+Domain Name System (DNS)
+The Domain Name System (DNS) is a hierarchical and decentralized naming system used to translate domain names into IP addresses. When a user types a domain name into a browser, DNS servers resolve that name into an IP address so that the user's device can locate and communicate with the appropriate web server. DNS functions like a phone book for the internet, ensuring that users can access websites easily without needing to memorize complex numerical addresses. DNS also provides additional features, such as load balancing and redundancy.
+
+Some Domain Registrars
+Here are a few popular domain registrars where you can register domain names:
+
+GoDaddy
+Namecheap
+Bluehost
+Google Domains
+HostGator
+Domain.com
+1&1 IONOS
+DreamHost
+Hover
+Network Solutions

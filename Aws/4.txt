@@ -1,0 +1,19 @@
+Types of Load Balancers in AWS
+Application Load Balancer (ALB)
+
+Use case: Best suited for HTTP and HTTPS traffic. It operates at the Layer 7 (Application Layer) of the OSI model.
+Features:
+Intelligent routing based on URL, hostname, headers, or request parameters.
+Ideal for microservices and containerized applications.
+Network Load Balancer (NLB)
+
+Use case: Designed for handling TCP and UDP traffic at the Layer 4 (Transport Layer). Suitable for high-performance and low-latency applications.
+Features:
+Capable of managing millions of requests per second.
+Best for real-time applications like gaming or financial services.
+Classic Load Balancer (CLB)
+
+Use case: Legacy option supporting both Layer 7 (HTTP/HTTPS) and Layer 4 (TCP/SSL) traffic.
+Features:
+Basic load balancing for applications developed on older architectures.
+Typically used in applications that do not require the advanced routing and features of ALB or NLB.

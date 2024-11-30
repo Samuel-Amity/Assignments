@@ -1,0 +1,26 @@
+Q1: Difference between IAM User and IAM Roles
+IAM User:
+
+Definition: An IAM user is an entity representing an individual person or service that interacts with AWS services.
+Permissions: A user is assigned long-term credentials like a username, password, and access keys to access AWS resources.
+Typical Uses: IAM users are used when individual or service-specific access is needed. For example, you would create a user for each team member needing direct access to AWS, or for applications that require API calls to AWS.
+IAM Role:
+
+Definition: An IAM role is a set of permissions to make AWS service requests. It does not have long-term credentials but uses temporary security tokens (provided by AWS Security Token Service).
+Permissions: Roles allow granting temporary access to AWS resources based on the role's policy, making it more secure for temporary access.
+Typical Uses: Roles are used when you need short-term access to AWS resources. Examples include:
+An EC2 instance needs to access S3.
+Federated users need temporary access to AWS.
+Cross-account access (e.g., allowing users from another AWS account to access your resources).
+Q2: IAM Policy vs Service Control Policy (SCP)
+IAM Policy:
+
+Definition: An IAM policy is a JSON document that defines permissions and specifies what actions are allowed or denied for a particular user, role, or group within an AWS account.
+Scope: It only applies to the users, groups, and roles within the account.
+Typical Uses: IAM policies are used to grant or deny permissions for specific resources. For example, an IAM policy might allow a user to read objects from a specific S3 bucket or allow an EC2 instance to access DynamoDB.
+Service Control Policy (SCP):
+
+Definition: SCPs are policies applied to AWS Organizations. They control permissions at the organization or organizational unit (OU) level and set permission boundaries for AWS accounts within the organization.
+Scope: SCPs apply to all users, roles, and accounts in an organization or specific OUs. They do not grant permissions directly but restrict what actions can be performed.
+Typical Uses: SCPs are used to enforce security or compliance rules across multiple AWS accounts. For example, an SCP could prevent any user in an organization from deleting an S3 bucket, regardless of their IAM permissions.
+In short, IAM Policies control permissions at the account level, while SCPs control permissions across an entire organization or multiple accounts.

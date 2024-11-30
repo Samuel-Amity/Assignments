@@ -1,0 +1,44 @@
+EBS Volume Types Overview
+
+General Purpose SSD (gp2/gp3)
+
+Description: Provides a balanced price and performance for a wide range of workloads.
+Performance Characteristics:
+gp2: Up to 16,000 IOPS and 250 MB/s max throughput.
+gp3: Up to 16,000 IOPS and 1,000 MB/s max throughput (with the ability to provision IOPS and throughput independently).
+Use Cases:
+Boot volumes
+Small to medium-sized databases
+Development and testing environments
+Provisioned IOPS SSD (io1/io2)
+
+Description: Designed for I/O-intensive applications that require low latency and high IOPS.
+Performance Characteristics:
+io1: Up to 64,000 IOPS (depends on instance type).
+io2: Up to 256,000 IOPS with increased durability.
+Use Cases:
+Large relational databases
+Mission-critical applications requiring sustained IOPS performance
+Throughput Optimized HDD (st1)
+
+Description: A low-cost HDD for frequently accessed, throughput-intensive workloads.
+Performance Characteristics: Max throughput of 500 MB/s and 40 MB/s per TB.
+Use Cases:
+Big data analytics
+Data warehousing
+Log processing
+Cold HDD (sc1)
+
+Description: The lowest-cost HDD for infrequently accessed data.
+Performance Characteristics: Max throughput of 250 MB/s and 12 MB/s per TB.
+Use Cases:
+Archival storage
+Backup solutions
+Data that is rarely accessed
+Magnetic (standard)
+
+Description: An older technology; lower cost for less frequently accessed data.
+Performance Characteristics: Lower performance compared to SSD options, with up to 40-90 IOPS per volume.
+Use Cases:
+Boot volumes for non-critical applications
+Data requiring infrequent access

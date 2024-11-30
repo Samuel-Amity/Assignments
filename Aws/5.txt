@@ -1,0 +1,55 @@
+
+Project Documentation: Hosting a Static Website in S3 and Enabling Global Distribution with CloudFront
+Overview
+In this project, I successfully hosted a static website using Amazon S3 and enabled global distribution through Amazon CloudFront. This documentation outlines the steps I took to accomplish this.
+
+Step 1: Create an S3 Bucket
+Logged into the AWS Management Console.
+Navigated to the S3 service.
+Clicked on Create bucket.
+Chose a unique bucket name (e.g., my-static-website-bucket) and selected the desired region.
+Under the Permissions section, I unchecked the Block all public access option to allow public access.
+Clicked Create bucket to finalize the process.
+Step 2: Upload Website Files
+Opened the created bucket by clicking on its name.
+Clicked the Upload button to add my static website files (e.g., index.html, style.css, and images).
+Dragged and dropped the files into the upload window and clicked Upload to transfer them to the bucket.
+Step 3: Configure Bucket for Static Website Hosting
+In the bucket, I navigated to the Properties tab.
+Scrolled down to the Static website hosting section.
+Selected Use this bucket to host a website.
+Entered index.html as the Index document and specified 404.html as the Error document (optional).
+Clicked Save changes to apply the configuration.
+Step 4: Set Bucket Policy for Public Access
+Moved to the Permissions tab in the bucket.
+
+Clicked on Bucket Policy to define the policy.
+
+Added the following JSON policy to allow public access to the objects:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-static-website-bucket/*"
+        }
+    ]
+}
+(Replaced my-static-website-bucket with my actual bucket name.)
+
+Clicked Save to apply the policy.
+
+Step 5: Create a CloudFront Distribution
+Navigated to the CloudFront service in the AWS Management Console.
+Clicked on Create Distribution and selected Web to get started.
+For the Origin Domain Name, I selected my S3 bucket from the dropdown list.
+Set the Viewer Protocol Policy to Redirect HTTP to HTTPS for enhanced security.
+Left the other settings as default for simplicity and clicked Create Distribution.
+Waited a few minutes for the distribution to be created.
+Step 6: Accessing the Website
+Once the distribution was created, I found the Domain Name of my CloudFront distribution (e.g., d1abcde12345.cloudfront.net) in the list of distributions.
+Opened a web browser and entered the CloudFront URL to access my static website globally.

@@ -1,0 +1,33 @@
+AWS GuardDuty vs. AWS Trusted Advisor
+Purpose:
+
+AWS GuardDuty: Security monitoring and threat detection service.
+AWS Trusted Advisor: Resource optimization and best practices recommendations.
+Focus Area:
+
+AWS GuardDuty: Detects malicious activities, unauthorized behavior, and security vulnerabilities.
+AWS Trusted Advisor: Provides insights on cost optimization, performance, security, fault tolerance, and service limits.
+Data Sources:
+
+AWS GuardDuty: Analyzes VPC Flow Logs, AWS CloudTrail event logs, and DNS logs.
+AWS Trusted Advisor: Analyzes AWS usage and configurations.
+Alerts and Notifications:
+
+AWS GuardDuty: Generates alerts for detected threats and security issues.
+AWS Trusted Advisor: Provides a dashboard with recommendations; no specific alerts.
+Integration:
+
+AWS GuardDuty: Integrates with AWS Security Hub and AWS CloudWatch.
+AWS Trusted Advisor: Integrates with AWS Billing and Cost Management.
+Use Cases:
+
+AWS GuardDuty: Ideal for organizations needing continuous security monitoring and threat detection.
+AWS Trusted Advisor: Suitable for optimizing AWS resource usage and implementing best practices.
+Cost:
+
+AWS GuardDuty: Charged based on analyzed data volume and monitored accounts.
+AWS Trusted Advisor: Available at no additional cost; some features may be limited by service limits.
+Dashboard:
+
+AWS GuardDuty: Provides a security findings dashboard for tracking alerts.
+AWS Trusted Advisor: Offers a dashboard with multiple categories for best practice checks.

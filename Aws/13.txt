@@ -1,0 +1,18 @@
+AWS SageMaker
+AWS SageMaker is a fully managed service that provides developers and data scientists with the tools to build, train, and deploy machine learning (ML) models at scale. SageMaker simplifies the process of developing ML models by providing an integrated Jupyter notebook environment, built-in algorithms, and support for popular frameworks like TensorFlow, PyTorch, and Scikit-learn.
+
+Key Features of AWS SageMaker:
+Built-in Algorithms: Offers a selection of optimized machine learning algorithms that can be easily integrated into workflows.
+Training and Tuning: Allows for distributed training of models with automatic model tuning (hyperparameter optimization) to improve performance.
+Model Deployment: Simplifies the deployment of models into production with one-click deployment options.
+End-to-End Workflow: Supports the entire ML lifecycle from data preparation to model evaluation and deployment.
+Integration with Other AWS Services: Easily integrates with services like AWS S3 (for data storage), AWS Lambda (for serverless computing), and AWS Glue (for data preparation).
+AWS Sumerian
+AWS Sumerian is a platform that enables developers to create and run virtual reality (VR), augmented reality (AR), and 3D applications quickly and easily. It provides a web-based interface that allows users to design scenes, import assets, and create interactive experiences without requiring deep expertise in 3D graphics or programming.
+
+Key Features of AWS Sumerian:
+User-Friendly Interface: Offers an easy-to-use interface for designing and building VR/AR experiences without coding.
+Integration with AWS Services: Integrates with other AWS services like AWS Lambda for backend functionality, Amazon Polly for voice generation, and Amazon Rekognition for image analysis.
+Asset Library: Provides a library of 3D models, animations, and other assets to help speed up development.
+Cross-Platform Compatibility: Allows developers to publish experiences that can be viewed on various devices, including mobile phones, desktops, and VR headsets.
+Real-time Interaction: Supports real-time interaction and scripting to create engaging user experiences.

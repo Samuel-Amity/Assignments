@@ -1,0 +1,32 @@
+
+What is AWS Elastic Beanstalk?
+AWS Elastic Beanstalk is a Platform as a Service (PaaS) offered by Amazon Web Services (AWS) that simplifies the deployment, management, and scaling of web applications and services. It provides a quick and efficient way for developers to deploy applications without having to worry about the underlying infrastructure, allowing them to focus on writing code and developing features.
+
+Key Features
+Automatic Scaling:
+Elastic Beanstalk automatically adjusts the number of instances running your application based on the current load. This ensures that the application remains responsive and can handle varying traffic levels.
+
+Multiple Language Support:
+Elastic Beanstalk supports several programming languages and frameworks, including:
+
+Java
+.NET
+Node.js
+PHP
+Python
+Ruby
+Go
+Integrated Management Tools:
+It provides a management console that allows users to monitor application health, view logs, and manage application versions. Additionally, AWS Command Line Interface (CLI) and SDKs can be used for programmatic access.
+
+Built-in Load Balancing:
+Elastic Beanstalk automatically provisions load balancers to distribute incoming traffic among multiple instances, improving application availability and fault tolerance.
+
+Customization:
+Developers can customize the environment configuration, including instance types, scaling policies, and networking settings, giving them flexibility in managing their applications.
+
+Monitoring and Logging:
+It integrates with Amazon CloudWatch to provide monitoring and alerting for application performance and health. Logs can be accessed easily for troubleshooting.
+
+Deployment Options:
+Users can deploy applications using several methods, including uploading code through the management console, using Git for source control, or integrating with CI/CD pipelines.

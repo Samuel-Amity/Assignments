@@ -1,0 +1,32 @@
+1. Amazon Machine Image (AMI)
+An Amazon Machine Image (AMI) is a pre-configured template used to launch EC2 instances. It includes:
+
+Operating system (e.g., Linux, Windows).
+Application server and software (e.g., Apache, MySQL).
+AMIs serve as "blueprints" to create instances with predefined setups.
+AMIs can be:
+Public AMIs (provided by AWS or third parties).
+Private AMIs (custom-built for specific needs).
+
+2. Security Group
+A Security Group is a virtual firewall that controls inbound and outbound traffic for EC2 instances.
+Key features:
+
+Inbound rules: Specify what traffic is allowed to reach the instance (e.g., allowing HTTP on port 80).
+Outbound rules: Specify what traffic can leave the instance.
+Stateful: If traffic is allowed in, the corresponding response is automatically allowed out.
+
+3. Instance Types
+Instance Types define the hardware specifications of an EC2 instance, such as:
+
+CPU, memory, storage, and network performance. AWS offers various instance types for different workloads:
+General-purpose instances (e.g., t2.micro): Balanced for a variety of applications.
+Specialized instances (e.g., m5.large for memory-optimized, p3.xlarge for GPU workloads).
+
+4. Key Pair
+A Key Pair is a set of security credentials used for SSH or RDP access to EC2 instances. It consists of:
+
+Public key: Stored by AWS on the instance.
+Private key: Held by you, used to access the instance. Key pairs ensure secure login:
+Linux instances: Use the private key for SSH.
+Windows instances: Use the private key to decrypt the administrator password for RDP access.

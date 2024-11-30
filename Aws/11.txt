@@ -1,0 +1,20 @@
+What is AWS Transit Gateway?
+AWS Transit Gateway is a networking service provided by Amazon Web Services (AWS) that simplifies the management of multiple Virtual Private Clouds (VPCs) and on-premises networks. It acts as a central hub that connects VPCs, AWS services, and on-premises networks through a single gateway. Transit Gateway enables you to efficiently route traffic between your networks and provides a scalable and flexible architecture for managing your network connections.
+
+Key Features of AWS Transit Gateway:
+Centralized Management: Allows you to manage and control traffic flow between multiple VPCs and on-premises networks from a single interface.
+Scalability: Supports thousands of VPCs and can scale automatically to accommodate increased traffic and network demands.
+Simplified Routing: Uses a hub-and-spoke model for routing traffic, making it easier to manage complex network architectures.
+Inter-Region Connectivity: Supports connections between VPCs in different AWS regions, enabling a global network architecture.
+Integration with AWS Services: Easily connects with other AWS services like AWS Direct Connect, AWS VPN, and AWS CloudWAN for enhanced connectivity options.
+
+
+
+| Feature                    | AWS Transit Gateway                                                      | VPC Peering                                        |
+|----------------------------|-------------------------------------------------------------------------|---------------------------------------------------|
+| Architecture               | Hub-and-spoke model for centralized routing.                            | Point-to-point connection between two VPCs.       |
+| Scalability                | Supports thousands of VPCs and on-premises networks.                     | Limited to direct peering between two VPCs only.  |
+| Complexity                 | Simplifies management of multiple connections through a single gateway. | Management can become complex with multiple VPCs.  |
+| Routing                    | Centralized routing table for managing traffic flow.                     | Requires individual route entries for each peering connection. |
+| Inter-Region Connectivity   | Supports connections across different AWS regions.                       | Limited to peering within the same AWS region, unless explicitly configured for cross-region. |
+| Cost                       | Charged based on data transfer and number of attachments.                 | Charged for data transfer, but no additional costs for the peering connection itself. |
